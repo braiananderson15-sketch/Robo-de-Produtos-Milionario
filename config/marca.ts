@@ -1,7 +1,7 @@
 // ÚNICO arquivo que o revendedor precisa editar.
 // Troque os valores entre aspas e publique de novo na Vercel.
 export const marca = {
-  nomeApp: "Robô de Produtos Milionários", // nome que aparece no topo e na aba do navegador
+  nomeApp: "aula do braian", // nome que aparece no topo e na aba do navegador
   nomeVitrine: "Cofre do Nome", // nome que aparece na vitrine do anúncio (/vitrine)
   nomeDono: "Braian", // nome do dono da cópia (uso futuro)
   linkPagamento: "https://SEU-LINK-DE-PAGAMENTO", // link da plataforma de pagamento (Binyra, Kiwify, Hotmart...)
