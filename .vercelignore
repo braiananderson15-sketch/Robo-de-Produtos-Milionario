@@ -1,0 +1,9 @@
+# Segredos ficam nas variáveis da Vercel, nunca nos arquivos enviados.
+.env*
+.agents/
+.claude/
+.vercel/
+.convex/
+node_modules/
+.next/
+*.tsbuildinfo

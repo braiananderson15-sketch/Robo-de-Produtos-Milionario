@@ -1,33 +1,39 @@
 {
-  "name": "vercel-marketplace-convex",
+  "name": "robo-de-produtos-milionarios",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm-run-all --parallel dev:frontend dev:backend",
-    "dev:frontend": "next dev",
-    "dev:backend": "convex dev",
-    "predev": "convex dev --until-success && convex dashboard",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ignore-pattern \"convex/_generated/**\""
+    "lint": "eslint",
+    "test": "vitest run"
   },
   "dependencies": {
-    "convex": "^1.36.1",
-    "next": "16.1.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@auth/core": "0.41.1",
+    "@convex-dev/auth": "0.0.96",
+    "@convex-dev/resend": "0.2.8",
+    "@oslojs/crypto": "1.0.1",
+    "convex": "1.46.0",
+    "jose": "6.2.12",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "resend": "6.32.1",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@convex-dev/eslint-plugin": "^1.0.0",
-    "@tailwindcss/postcss": "^4",
+    "@edge-runtime/vm": "5.0.0",
+    "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "convex-test": "0.0.60",
     "eslint": "^9",
-    "eslint-config-next": "16.0.1",
-    "npm-run-all2": "^5.0.0",
-    "prettier": "^3.5.3",
+    "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.11"
   }
 }
